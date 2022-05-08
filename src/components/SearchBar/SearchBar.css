@@ -1,0 +1,16 @@
+.search{
+    padding: 0.5em;
+    border-radius: 1em 0 0 1em;
+    border: none;
+    outline: none;
+    color: blueviolet;
+}
+
+.search-button{
+    padding: 0.5em;
+    /* border: 1px solid violet; */
+    border-radius: 0 1em 1em 0;
+    color: blueviolet;
+    background-color: white;
+    
+}

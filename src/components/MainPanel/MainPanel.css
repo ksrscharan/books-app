@@ -1,0 +1,26 @@
+.main-panel{
+    border: 1px solid violet;
+    margin: 1em;
+    padding: 1em;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    flex-wrap: wrap;
+    flex: 1fr 1fr;
+    justify-content: space-evenly;
+    border-radius: 1em;
+    color: blueviolet;
+
+
+
+}
+.no-result{
+    width: 100%;
+    text-align: center;
+    color: blueviolet;
+}
+
+@media (max-width:700px) {
+    .main-panel{
+        grid-template-columns: 1fr;
+    }
+}

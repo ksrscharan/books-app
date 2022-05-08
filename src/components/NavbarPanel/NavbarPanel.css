@@ -1,0 +1,33 @@
+.nav-panel {
+    color: blueviolet;
+    font-size: larger;
+    border-bottom: 1px solid violet;
+    /* margin: 1em; */
+    padding: 1em;
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    background-color: blueviolet;
+    border-radius: 1em 1em 0 0;
+
+}
+
+.filter-button {
+    border: 1px solid violet;
+    padding: 0.5em;
+    width: max-content;
+}
+
+.filter-button:hover {
+    cursor: pointer;
+}
+.hide{
+    display: none;
+    position: absolute;
+    top: 5%;
+    font-size: small;
+}
+.filter-button:hover + .hide{
+    display: block;
+}

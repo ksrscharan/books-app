@@ -1,0 +1,31 @@
+.foot-panel{
+    /* border: 1px solid violet; */
+    /* margin: 1em; */
+    padding: 1em;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    border-radius: 0 0 1em 1em;
+    background-color: blueviolet;
+    
+}
+.max-results{
+    outline: none;
+    background-color: transparent;
+    padding: 0.1em;
+}
+.max-results > option{
+    background-color: blueviolet;
+    outline: none;
+    border: none;
+}
+.nav-buttons{
+    color: blueviolet;
+    background-color: white;
+    padding: 0.5em;
+}
+.nav-buttons:hover{
+    cursor: pointer;
+}

@@ -1,0 +1,43 @@
+.filters-panel{
+    background-color: blueviolet;
+    color: black;
+    position: absolute;
+    top: 100%;
+    /* border: 1px solid violet; */
+    box-shadow: 10px 10px 300px 0;
+    left: 0;
+    border-radius: 1em;
+    padding: 1em;
+    transition: box-shadow 0.3s ease;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: max-content;
+    width: max-content;
+    z-index: 100;
+
+}
+.sort{
+    color: white;
+    background-color: transparent;
+    outline: 1px violet solid;
+    padding: 0.1em;
+}
+.sort > option{
+    /* color: black; */
+    background-color: blueviolet;
+
+}
+.rating{
+    color: white;
+    background-color: transparent;
+    outline: 1px violet solid;
+    padding: 0.1em;
+}
+.rating > option{
+    /* color: black; */
+    background-color: blueviolet;
+    border-radius: 0;
+}
+.filters-panel > div, input, select{
+    margin: 10px;
+}
