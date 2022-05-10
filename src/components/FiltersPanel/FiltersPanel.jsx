@@ -21,7 +21,7 @@ function FiltersPanel({
       style={{ ...filterStyle}}
     >
       {/* SORT BY FILTER */}
-      <div lassName="sort">
+      <div className="sort">
         <span>Sort By: </span>
         <select
         className="sort"

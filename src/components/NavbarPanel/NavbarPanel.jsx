@@ -20,9 +20,42 @@ function Navbar(props) {
   } = props;
 
   useEffect(() => {
-    setCount(Object.values(filters).filter((a) => a).length);
+    // setCount(Object.values(filters).filter((a) => a).length);
     setEnabled(...(enabled + Object.values(filters).filter((a) => a)));
-    console.log(enabled, "enabled");
+    // console.log(enabled, "enabled");
+    if (
+      (filters.forSaleOnly == true &&
+        filters.ratedOnly == false &&
+        filters.priceRange == 0) ||
+      (filters.forSaleOnly == false &&
+        filters.ratedOnly == true &&
+        filters.priceRange == 0) ||
+      (filters.forSaleOnly == false &&
+        filters.ratedOnly == false &&
+        filters.priceRange > 0)
+    ) {
+      setCount(1);
+    } else if (
+      (filters.forSaleOnly == true &&
+        filters.ratedOnly == true &&
+        filters.priceRange == 0) ||
+      (filters.forSaleOnly == false &&
+        filters.ratedOnly == true &&
+        filters.priceRange > 0) ||
+      (filters.forSaleOnly == true &&
+        filters.ratedOnly == false &&
+        filters.priceRange > 0)
+    ) {
+      setCount(2);
+    } else if (
+      filters.forSaleOnly == true &&
+      filters.ratedOnly == true &&
+      filters.priceRange > 0
+    ) {
+      setCount(3);
+    } else {
+      setCount(0);
+    }
   }, [filters]);
 
   const [filterStyle, setFilterStyle] = useState({ display: "none" });
@@ -46,7 +79,7 @@ function Navbar(props) {
           .replaceAll('"', "")
           .replaceAll("{", "")
           .replaceAll("}", "")
-          .replaceAll(',', " , ")}
+          .replaceAll(",", " , ")}
       </div>
       <FiltersPanel
         filterStyle={filterStyle}

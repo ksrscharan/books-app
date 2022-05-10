@@ -19,10 +19,8 @@ function Footpanel({ startIndex, setStartIndex, maxResults, setMaxResults }) {
         Previous
       </button>
 
+      
       <div>
-        {maxResults} per page. from Book No: {startIndex + 1} to Book No:{" "}
-        {parseInt(startIndex) + parseInt(maxResults)}. May show less with filters enabled.
-      </div>
 
       <select
         className="max-results"
@@ -38,10 +36,13 @@ function Footpanel({ startIndex, setStartIndex, maxResults, setMaxResults }) {
         <option value="20">20</option>
         <option value="30">30</option>
       </select>
+      <span>per page</span>
+      </div>
+      
       <button
         className="nav-buttons"
         onClick={(e) => {
-          if (parseInt(startIndex) + parseInt(maxResults) < 500) {
+          if (parseInt(startIndex) + parseInt(maxResults) < 50) {
             setStartIndex(parseInt(startIndex) + parseInt(maxResults));
             e.disabled = false;
           } else {
