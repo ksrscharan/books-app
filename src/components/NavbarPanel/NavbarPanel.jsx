@@ -71,7 +71,7 @@ function Navbar(props) {
   return (
     <div className="nav-panel">
       <button onClick={changeDisplay} className="filter-button">
-        Filters {count}{" "}
+        Filters ({count}){" "}
       </button>
       <div className="hide">
         {JSON.stringify(filters)

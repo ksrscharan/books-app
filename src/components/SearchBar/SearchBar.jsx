@@ -41,7 +41,7 @@ function SearchBar({ setSearchTerm, setStartIndex }) {
           setStartIndex(0);
         }}
       >
-        Click
+        Search
       </button>
     </div>
   );

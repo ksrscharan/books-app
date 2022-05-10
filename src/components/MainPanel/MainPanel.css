@@ -1,12 +1,15 @@
 .main-panel{
     border: 1px solid violet;
     margin: 1em;
+    margin-bottom: 12vh;
     padding: 1em;
     display: grid;
     grid-template-columns: 1fr 1fr;
+
     flex-wrap: wrap;
     flex: 1fr 1fr;
     justify-content: space-evenly;
+    /* align-items: center; */
     border-radius: 1em;
     color: blueviolet;
 
