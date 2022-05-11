@@ -1,30 +1,29 @@
 import React, { useState } from "react";
-import './FiltersPanel.css'
+import "./FiltersPanel.css";
 
 function FiltersPanel({
   filterStyle,
   setOrderBy,
   setFilterStyle,
   filters,
-  setFilters
+  setFilters,
 }) {
   // console.log("PRICE RANGE: ",filters.priceRange)
   let changeDisplay = () => {
     setFilterStyle({ ...filterStyle, display: "none" });
   };
 
-
   return (
     <div
       className="filters-panel"
       onMouseLeave={changeDisplay}
-      style={{ ...filterStyle}}
+      style={{ ...filterStyle }}
     >
       {/* SORT BY FILTER */}
       <div className="sort">
         <span>Sort By: </span>
         <select
-        className="sort"
+          className="sort"
           name="orderBy"
           onClick={(e) => {
             e.preventDefault();
@@ -48,7 +47,7 @@ function FiltersPanel({
             type="checkbox"
             onChange={(e) => {
               setFilters({ ...filters, forSaleOnly: !filters.forSaleOnly });
-              console.log(filters.forSaleOnly);
+              // console.log(filters.forSaleOnly);
             }}
           />
           <span>Only For Sale</span>
@@ -90,7 +89,9 @@ function FiltersPanel({
             min={0}
             max={10000}
             step={500}
-            onChange={(e) => setFilters({...filters, priceRange: e.target.value})}
+            onChange={(e) =>
+              setFilters({ ...filters, priceRange: e.target.value })
+            }
           />
           <span>{filters.priceRange}</span>
         </div>

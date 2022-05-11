@@ -1,16 +1,24 @@
-.search{
+.search {
     padding: 0.5em;
     border-radius: 1em 0 0 1em;
     border: none;
     outline: none;
-    color: blueviolet;
+    color: #7D1E6A;
 }
 
-.search-button{
+.search-button {
     padding: 0.5em;
     /* border: 1px solid violet; */
     border-radius: 0 1em 1em 0;
-    color: blueviolet;
+    color: #7D1E6A;
     background-color: white;
-    
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+
+}
+
+.search-button:hover {
+    background-image: linear-gradient(to bottom right, #7D1E6A, #EEB0B0);
+    color: white;
+
 }

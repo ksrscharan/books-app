@@ -1,0 +1,59 @@
+.pop-up {
+    /* width: fit-content; */
+    width: 80%;
+    /* height: fit-content; */
+    height: 80%;
+    position: fixed;
+    color: #EEB0B0;
+    background-color: #7D1E6A;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+    overflow-y: scroll;
+    /* z-index: 2; */
+    top: 15%;
+    left: 10%;
+    pointer-events: auto;
+    z-index: 3;
+    overflow-x: hidden;
+
+}
+
+.pop-left>img {
+    padding: 1em;
+    width: 100%;
+    height: 20%;
+    /* border: 1px solid red; */
+    position: relative;
+}
+
+.pop-right {
+    width: 100%;
+    min-height: 100%;
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 2em;
+    position: relative;
+
+
+}
+
+.close {
+    color: white;
+    cursor: pointer;
+    position: sticky;
+    float: right;
+    right: 0;
+    top: 0;
+    padding: 1em;
+    border: 1px solid #EEB0B0;
+    border-radius: 1em;
+    z-index: 2;
+    width: fit-content;
+    background-color: inherit;
+}

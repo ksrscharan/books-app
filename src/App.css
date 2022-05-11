@@ -1,24 +1,22 @@
-*{
+* {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    color: white;
+    /* color: white; */
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
-button{
+
+button {
     background-color: transparent;
     border: none;
 }
-.app{
+
+.app {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 100vw;
     position: relative;
-    
+
 }
-
-
-
-

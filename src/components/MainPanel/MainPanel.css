@@ -1,29 +1,21 @@
-.main-panel{
-    border: 1px solid violet;
-    margin: 1em;
-    margin-bottom: 12vh;
-    padding: 1em;
+.main-panel {
     display: grid;
     grid-template-columns: 1fr 1fr;
-
-    flex-wrap: wrap;
-    flex: 1fr 1fr;
-    justify-content: space-evenly;
-    /* align-items: center; */
-    border-radius: 1em;
-    color: blueviolet;
-
-
-
-}
-.no-result{
-    width: 100%;
-    text-align: center;
-    color: blueviolet;
+    justify-content: center;
+    align-items: center;
+    /* margin: 1em; */
+    padding: 1em;
+    pointer-events: none;
+    background-image: linear-gradient(to bottom right, #BDE6F1, #EEB0B0);
+    transition: background-image 0.3s ease;
 }
 
-@media (max-width:700px) {
-    .main-panel{
+.main-panel:hover {
+    background-image: linear-gradient(to bottom right, #EEB0B0, #BDE6F1);
+}
+
+@media (max-width: 700px) {
+    .main-panel {
         grid-template-columns: 1fr;
     }
 }

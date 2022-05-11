@@ -1,5 +1,5 @@
 .nav-panel {
-    color: blueviolet;
+    color: #EEB0B0;
     font-size: larger;
     border-bottom: 1px solid violet;
     /* margin: 1em; */
@@ -8,26 +8,37 @@
     justify-content: space-between;
     position: sticky;
     top: 0;
-    background-color: blueviolet;
+    background-color: #7D1E6A;
     border-radius: 1em 1em 0 0;
+    z-index: 2;
 
 }
 
 .filter-button {
-    border: 1px solid violet;
+    border: 1px solid #EEB0B0;
+    background-color: #7D1E6A;
+    color: #EEB0B0;
     padding: 0.5em;
     width: max-content;
+    border-radius: 1em;
+    transition: all 0.3s ease-in-out;
 }
 
 .filter-button:hover {
     cursor: pointer;
+    border: 1px solid #7D1E6A;
+    background-color: #EEB0B0;
+    color: #7D1E6A;
+
 }
-.hide{
+
+.hide {
     display: none;
     position: absolute;
     top: 5%;
     font-size: small;
 }
-.filter-button:hover + .hide{
+
+.filter-button:hover+.hide {
     display: block;
 }

@@ -1,4 +1,4 @@
-import React , {useEffect} from "react";
+import React, { useEffect } from "react";
 import Card from "../Card/Card";
 import "./MainPanel.css";
 
@@ -160,7 +160,7 @@ function MainPanel(props) {
       )}
 
       {/* NO CARDS */}
-      {cards === undefined && <div>No Results!</div>}
+      {cards === undefined && <div className="no-result">No Results!</div>}
     </div>
   );
 }

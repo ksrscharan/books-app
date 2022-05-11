@@ -1,10 +1,10 @@
-.filters-panel{
-    background-color: blueviolet;
-    color: black;
+.filters-panel {
+    background-color: #EEB0B0;
+    color: #7D1E6A;
     position: absolute;
     top: 100%;
     /* border: 1px solid violet; */
-    box-shadow: 10px 10px 300px 0;
+    /* box-shadow: 0.1px 1px 30px 0; */
     left: 0;
     border-radius: 1em;
     padding: 1em;
@@ -13,31 +13,38 @@
     grid-template-columns: 1fr 1fr;
     height: max-content;
     width: max-content;
-    z-index: 100;
+    z-index: 2;
 
 }
-.sort{
-    color: white;
+
+.sort {
+    color: #7D1E6A;
+    background-color: transparent;
+    /* outline: 1px violet solid; */
+    padding: 0.1em;
+}
+
+.sort>option {
+    /* color: black; */
+    background-color: #EEB0B0;
+
+}
+
+.rating {
+    color: #7D1E6A;
     background-color: transparent;
     outline: 1px violet solid;
     padding: 0.1em;
 }
-.sort > option{
-    /* color: black; */
-    background-color: blueviolet;
 
-}
-.rating{
-    color: white;
-    background-color: transparent;
-    outline: 1px violet solid;
-    padding: 0.1em;
-}
-.rating > option{
+.rating>option {
     /* color: black; */
-    background-color: blueviolet;
+    background-color: #EEB0B0;
     border-radius: 0;
 }
-.filters-panel > div, input, select{
+
+.filters-panel>div,
+input,
+select {
     margin: 10px;
 }
